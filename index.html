@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>your nail shop ♡</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7fa;
+      color: #49343e;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: white;
+      border-bottom: 1px solid #f4dce6;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #a94d73;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 75px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #f9dce8, #fff7fa, #f5e6f0);
+    }
+
+    .eyebrow {
+      color: #a94d73;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(42px, 9vw, 72px);
+      line-height: 1.1;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 13px 24px;
+      background: #a94d73;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    .collections {
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 800px;
+      margin: 25px auto;
+    }
+
+    .theme {
+      min-height: 170px;
+      padding: 22px 12px;
+      border-radius: 18px;
+      text-decoration: none;
+      color: #49343e;
+    }
+
+    .theme h3 {
+      font-family: Georgia, serif;
+      font-size: 20px;
+    }
+
+    .coquette { background: #f9dce8; }
+    .gothic { background: #29242d; color: white; }
+    .luxury { background: #eee9df; }
+    .playful { background: #dff1ed; }
+
+    .custom {
+      padding: 45px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #f9e8f0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 450px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">your nail shop ♡</div>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="shop.html">shop all</a>
+      <a href="size-guide.html">size guide</a>
+      <a href="custom.html">custom orders</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">handmade with love ♡</p>
+    <h1>little nails.<br>big personality.</h1>
+    <p>press-on nails made to match your vibe.</p>
+    <a class="button" href="shop.html">shop the collection ♡</a>
+  </section>
+
+  <section class="collections">
+    <p class="eyebrow">find your aesthetic</p>
+    <h2>shop by theme</h2>
+
+    <div class="grid">
+      <a class="theme coquette" href="coquette.html">
+        <div style="font-size:32px">୨୧</div>
+        <h3>pink coquette</h3>
+        <p>bows, pearls & pretty pinks</p>
+      </a>
+
+      <a class="theme gothic" href="gothic.html">
+        <div style="font-size:32px">✧</div>
+        <h3>gothic & chrome</h3>
+        <p>dark glam & silver details</p>
+      </a>
+
+      <a class="theme luxury" href="luxury.html">
+        <div style="font-size:32px">♡</div>
+        <h3>white luxury</h3>
+        <p>pearls, neutrals & elegance</p>
+      </a>
+
+      <a class="theme playful" href="playful.html">
+        <div style="font-size:32px">★</div>
+        <h3>colorful & playful</h3>
+        <p>bright colors & fun designs</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="custom">
+    <p class="eyebrow">your idea, your nails</p>
+    <h2>dream it. design it.</h2>
+    <p>have a custom design in mind?</p>
+    <a class="button" href="custom.html">request a custom set ♡</a>
+  </section>
+
+  <footer>
+    <p>made with love ♡ your nail shop</p>
+    <p>handmade press-on nails</p>
+  </footer>
+</body>
+</html>
