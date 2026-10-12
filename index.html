@@ -1,129 +1,219 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>heavenly tips ♡</title>
+  <meta name="description" content="heavenly tips ♡ handmade press-on nails for every aesthetic. find your dream nail set or request a custom design.">
   <style>
-    * { box-sizing: border-box; }
-
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff7fa;
-      color: #49343e;
+      background: #fff8fb;
+      color: #503746;
     }
-
     header {
-      padding: 20px;
+      padding: 22px 16px;
       text-align: center;
-      background: white;
-      border-bottom: 1px solid #f4dce6;
+      background: #ffffff;
+      border-bottom: 1px solid #f2dce8;
     }
-
     .logo {
       font-family: Georgia, serif;
-      font-size: 25px;
+      font-size: 30px;
       font-weight: bold;
+      color: #a65b80;
+      letter-spacing: 1px;
     }
-
+    .tagline {
+      margin: 7px 0 0;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #b78ba2;
+    }
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 15px;
+      gap: 18px;
+      margin-top: 20px;
     }
-
     nav a {
-      color: #a94d73;
+      color: #86516e;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
     }
-
+    nav a:hover {
+      color: #d17da6;
+    }
     .hero {
-      padding: 75px 20px;
+      padding: 85px 20px 90px;
       text-align: center;
-      background: linear-gradient(135deg, #f9dce8, #fff7fa, #f5e6f0);
+      background:
+        radial-gradient(ellipse at top, #ffffff 0%, transparent 55%),
+        linear-gradient(135deg, #f9dce9, #fff7fb, #f1e5f5);
     }
-
+    .angel-symbol {
+      font-size: 35px;
+      color: #bd8ba8;
+      margin-bottom: 12px;
+    }
     .eyebrow {
-      color: #a94d73;
+      color: #a65b80;
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 11px;
     }
-
     h1 {
       font-family: Georgia, serif;
-      font-size: clamp(42px, 9vw, 72px);
-      line-height: 1.1;
+      font-size: clamp(46px, 10vw, 78px);
+      line-height: 1.05;
+      font-weight: normal;
+      margin: 22px 0;
+      color: #70435d;
     }
-
+    .hero-description {
+      max-width: 430px;
+      margin: 0 auto;
+      line-height: 1.8;
+      font-size: 15px;
+      color: #76566a;
+    }
     .button {
       display: inline-block;
-      margin-top: 15px;
-      padding: 13px 24px;
-      background: #a94d73;
-      color: white;
+      margin-top: 24px;
+      padding: 14px 27px;
+      background: #a65b80;
+      color: #ffffff;
       border-radius: 30px;
       text-decoration: none;
+      font-size: 13px;
+      transition: background 0.2s;
     }
-
+    .button:hover {
+      background: #854363;
+    }
     .collections {
-      padding: 45px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-
+    h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 34px;
+      color: #70435d;
+      margin: 12px 0;
+    }
+    .section-description {
+      color: #896e7f;
+      font-size: 14px;
+      line-height: 1.7;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      max-width: 800px;
-      margin: 25px auto;
+      gap: 16px;
+      max-width: 820px;
+      margin: 32px auto 0;
     }
-
     .theme {
-      min-height: 170px;
-      padding: 22px 12px;
-      border-radius: 18px;
+      min-height: 185px;
+      padding: 25px 14px;
+      border-radius: 20px;
       text-decoration: none;
-      color: #49343e;
+      color: #593d4c;
+      transition: transform 0.2s;
     }
-
+    .theme:hover {
+      transform: translateY(-4px);
+    }
+    .theme-symbol {
+      font-size: 34px;
+    }
     .theme h3 {
       font-family: Georgia, serif;
-      font-size: 20px;
+      font-size: 22px;
+      font-weight: normal;
+      margin: 13px 0 8px;
     }
-
-    .coquette { background: #f9dce8; }
-    .gothic { background: #29242d; color: white; }
-    .luxury { background: #eee9df; }
-    .playful { background: #dff1ed; }
-
+    .theme p {
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    .coquette {
+      background: #f9dce8;
+    }
+    .gothic {
+      background: #29242f;
+      color: #ffffff;
+    }
+    .luxury {
+      background: #eee9df;
+    }
+    .playful {
+      background: #dff1ed;
+    }
     .custom {
-      padding: 45px 20px;
+      padding: 60px 20px;
       text-align: center;
-      background: white;
+      background: #ffffff;
+      border-top: 1px solid #f3e3ec;
+      border-bottom: 1px solid #f3e3ec;
     }
-
+    .custom-inner {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .custom p {
+      line-height: 1.8;
+      color: #896e7f;
+      font-size: 14px;
+    }
+    .coming-soon {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #9c7b90;
+      letter-spacing: 1px;
+    }
     footer {
-      padding: 25px;
+      padding: 30px 20px;
       text-align: center;
       background: #f9e8f0;
-      font-size: 13px;
+      font-size: 12px;
+      color: #89677c;
+      line-height: 1.8;
     }
-
+    footer p {
+      margin: 5px;
+    }
     @media (max-width: 450px) {
-      .grid { grid-template-columns: 1fr; }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding: 65px 18px 75px;
+      }
+      nav {
+        gap: 13px;
+      }
+      h2 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <div class="logo">your nail shop ♡</div>
+    <div class="logo">heavenly tips ♡</div>
+    <p class="tagline">a little piece of heaven for your nails</p>
     <nav>
       <a href="index.html">home</a>
       <a href="shop.html">shop all</a>
@@ -131,55 +221,63 @@
       <a href="custom.html">custom orders</a>
     </nav>
   </header>
-
   <section class="hero">
-    <p class="eyebrow">handmade with love ♡</p>
-    <h1>little nails.<br>big personality.</h1>
-    <p>press-on nails made to match your vibe.</p>
-    <a class="button" href="shop.html">shop the collection ♡</a>
+    <div class="angel-symbol">୨୧ ♡ ୨୧</div>
+    <p class="eyebrow">your nails, your little heaven</p>
+    <h1>heavenly<br>tips ♡</h1>
+    <p class="hero-description">
+      handmade press-on nails for every mood, aesthetic,
+      and little main-character moment.
+    </p>
+    <a class="button" href="shop.html">explore the shop ♡</a>
   </section>
-
   <section class="collections">
-    <p class="eyebrow">find your aesthetic</p>
-    <h2>shop by theme</h2>
-
+    <p class="eyebrow">find your perfect set</p>
+    <h2>shop by aesthetic</h2>
+    <p class="section-description">
+      a little something for every version of you.
+    </p>
     <div class="grid">
       <a class="theme coquette" href="coquette.html">
-        <div style="font-size:32px">୨୧</div>
+        <div class="theme-symbol">୨୧</div>
         <h3>pink coquette</h3>
         <p>bows, pearls & pretty pinks</p>
       </a>
-
       <a class="theme gothic" href="gothic.html">
-        <div style="font-size:32px">✧</div>
+        <div class="theme-symbol">✧</div>
         <h3>gothic & chrome</h3>
         <p>dark glam & silver details</p>
       </a>
-
       <a class="theme luxury" href="luxury.html">
-        <div style="font-size:32px">♡</div>
+        <div class="theme-symbol">♡</div>
         <h3>white luxury</h3>
         <p>pearls, neutrals & elegance</p>
       </a>
-
       <a class="theme playful" href="playful.html">
-        <div style="font-size:32px">★</div>
+        <div class="theme-symbol">★</div>
         <h3>colorful & playful</h3>
         <p>bright colors & fun designs</p>
       </a>
     </div>
+    <p class="coming-soon">
+      ✧ new heavenly creations coming soon ✧
+    </p>
   </section>
-
   <section class="custom">
-    <p class="eyebrow">your idea, your nails</p>
-    <h2>dream it. design it.</h2>
-    <p>have a custom design in mind?</p>
-    <a class="button" href="custom.html">request a custom set ♡</a>
+    <div class="custom-inner">
+      <p class="eyebrow">made just for you</p>
+      <h2>dream it. design it.</h2>
+      <p>
+        have a specific color, theme, or design in mind?
+        let's turn your nail vision into something special.
+      </p>
+      <a class="button" href="custom.html">request a custom set ♡</a>
+    </div>
   </section>
-
   <footer>
-    <p>made with love ♡ your nail shop</p>
-    <p>handmade press-on nails</p>
+    <p><strong>heavenly tips ♡</strong></p>
+    <p>handmade press-on nails, made with love.</p>
+    <p>୨୧ thank you for visiting our little heaven ୨୧</p>
   </footer>
 </body>
 </html>
